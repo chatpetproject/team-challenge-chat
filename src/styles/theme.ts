@@ -9,4 +9,4 @@ const Theme: DefaultTheme = {
   },
 };
 
-export { Theme };
+export default Theme;
