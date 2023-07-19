@@ -1,10 +1,10 @@
-import "./App.css";
+import styled from "styled-components"
+
+//import "./App.css";
 
 function App() {
   return (
-    <div className="App">
       <h1>Team challenge chat</h1>
-    </div>
   );
 }
 
