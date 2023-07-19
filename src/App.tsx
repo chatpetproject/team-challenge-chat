@@ -1,10 +1,15 @@
-import styled from "styled-components"
+import styled, { ThemeProvider } from "styled-components";
+import Theme from "./styles/theme";
 
-//import "./App.css";
+const Title = styled.h1`
+  color: ${(props) => props.theme.colors.main};
+`;
 
 function App() {
   return (
-      <h1>Team challenge chat</h1>
+    <ThemeProvider theme={Theme}>
+      <Title>Team challenge chat</Title>
+    </ThemeProvider>
   );
 }
 
