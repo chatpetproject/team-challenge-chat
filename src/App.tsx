@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import styled, { ThemeProvider } from "styled-components";
 import Theme from "./styles/theme";
 
@@ -10,6 +11,15 @@ function App() {
     <ThemeProvider theme={Theme}>
       <Title>Team challenge chat</Title>
     </ThemeProvider>
+=======
+import './App.css';
+
+function App() {
+  return (
+    <div className='App'>
+      <h1>Team challenge chat</h1>
+    </div>
+>>>>>>> 61aa6daeec663fae80727fbfb85a3d7e92a9c1c7
   );
 }
 
