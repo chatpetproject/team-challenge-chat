@@ -1,5 +1,6 @@
-import { Title } from "./UI/Title";
+import { MainTitle } from './UI/MainTitle';
+
 function App() {
-  return <Title>Team challenge chat</Title>;
+  return <MainTitle>Team challenge chat</ MainTitle>;
 }
 export default App;
