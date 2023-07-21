@@ -1,11 +1,6 @@
-import './App.css';
+import { MainTitle } from './UI/MainTitle';
 
 function App() {
-  return (
-    <div className='App'>
-      <h1>Team challenge chat</h1>
-    </div>
-  );
+  return <MainTitle>Team challenge chat</MainTitle>;
 }
-
 export default App;
