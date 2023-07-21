@@ -3,8 +3,13 @@ import 'styled-components';
 declare module 'styled-components' {
   export interface DefaultTheme {
     colors: {
-      main: string;
-      secondary: string;
+      blueColor: string[];
+      pinkColor: string[];
+      orangeColor: string;
+      violetColor: string;
+      blackColor: string[];
+      greyColor: string;
+      whiteColor: string;
     };
   }
 }
