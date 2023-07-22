@@ -8,7 +8,7 @@ const Theme: DefaultTheme = {
     orangeColor: '#FF8436',
     blackColor: ['#030303', '#202329'],
     greyColor: '#909090',
-    whiteColor: '#F9F9F9'
-  }
+    whiteColor: '#F9F9F9',
+  },
 };
 export default Theme;
