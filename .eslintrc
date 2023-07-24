@@ -23,7 +23,6 @@
         "prettier/prettier": [
             "error",
             {
-                "printWidth": 80,
                 "trailingComma": "es5",
                 "semi": true,
                 "jsxSingleQuote": true,
@@ -34,6 +33,10 @@
                     {
                         "code": 120
                     }
+                ],
+                "comma-dangle": [
+                    "error",
+                    "never"
                 ]
             }
         ],
