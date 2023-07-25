@@ -1,11 +1,14 @@
 import { MainTitle } from './UI/Text';
+import { Wrapper } from './UI/Wrapper';
 import Header from './components/Header';
 
 function App() {
   return (
     <>
-      <Header />
-      <MainTitle>Buttons</MainTitle>
+      <Wrapper>
+        <Header />
+        <MainTitle>Buttons</MainTitle>
+      </Wrapper>
     </>
   );
 }
