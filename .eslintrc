@@ -28,6 +28,7 @@
                 "jsxSingleQuote": true,
                 "singleQuote": true,
                 "endOfLine": "auto",
+                "tabWidth": 2,
                 "max-len": [
                     "error",
                     {
