@@ -10,4 +10,5 @@ export const LanSelect = styled.div`
   background-position: right;
   width: 110px;
   height: 30px;
+  margin: 15px 48px;
 `;

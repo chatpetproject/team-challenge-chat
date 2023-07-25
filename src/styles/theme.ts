@@ -20,6 +20,7 @@ const colors = {
 const gradients = {
   main: `linear-gradient(135deg, ${colors.blueColor[0]} 0%, ${colors.pinkColor} 50.26%, ${colors.orangeColor} 100%)`,
   secondary: `linear-gradient(135deg, ${colors.blueColor[1]} 0%, ${colors.violetColor} 100%)`,
+  header: `linear-gradient(135deg, ${colors.orangeColor} 12.5%, ${colors.pinkColor} 25%, ${colors.blueColor[1]} 37.5%, ${colors.blackColor} 60%)`,
 };
 
 const Theme: DefaultTheme = {
