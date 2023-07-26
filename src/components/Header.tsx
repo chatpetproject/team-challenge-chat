@@ -7,7 +7,6 @@ import { Wrapper } from '../UI/Wrapper';
 import { NavMenu } from '../UI/NavMenu';
 import { NavMenuList } from '../UI/NavMenuList';
 
-
 function Header() {
   return (
     <HeaderContainer>
@@ -20,9 +19,9 @@ function Header() {
                 <LanSelect>English</LanSelect>
               </li>
               <li>
-                  <Button variant='secondary' width='157px' height='45px'>
-                    Sign up
-                  </Button>
+                <Button variant='secondary' width='157px' height='45px'>
+                  Sign up
+                </Button>
               </li>
               <li>
                 <Button variant='primary' width='262px' height='45px'>
