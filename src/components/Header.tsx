@@ -5,7 +5,7 @@ import LogoImage from '../assets/logo.svg';
 import { HeaderContainer } from '../UI/HeaderContainer';
 import { Wrapper } from '../UI/Wrapper';
 import { NavMenu } from '../UI/NavMenu';
-import { NavList } from '../UI/NavList';
+import { NavMenuList } from '../UI/NavMenuList';
 
 function Header() {
   return (
@@ -14,7 +14,7 @@ function Header() {
         <NavMenu>
           <Logo src={LogoImage}></Logo>
           <nav>
-            <NavList>
+            <NavMenuList>
               <li>
                 <LanSelect>English</LanSelect>
               </li>
@@ -28,7 +28,7 @@ function Header() {
                   Enter to the chat
                 </Button>
               </li>
-            </NavList>
+            </NavMenuList>
           </nav>
         </NavMenu>
       </Wrapper>
