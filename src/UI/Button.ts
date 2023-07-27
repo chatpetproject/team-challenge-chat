@@ -1,7 +1,5 @@
 import styled from 'styled-components';
-import { ButtonHTMLAttributes } from 'react';
-
-export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+interface ButtonProps {
   variant: 'primary' | 'secondary';
   disabled?: boolean;
   width: string;
