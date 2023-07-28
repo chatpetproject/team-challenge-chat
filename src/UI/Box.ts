@@ -3,39 +3,32 @@ import { styled } from 'styled-components';
 export interface BoxProps {
   width?: string;
   height?: string;
-  background?: string;
   border?: string;
+  padding?: string;
+  background?: string;
+  'border-radius'?: string;
+  'background-color'?: string;
 }
 
 export const Box = styled.div<BoxProps>`
-  display: block;
   width: ${(props) => props.width};
   height: ${(props) => props.height};
-  background: ${(props) => props.background};
   border: ${(props) => props.border};
+  padding: ${(props) => props.padding};
+  background: ${(props) => props.background};
+  border-radius: ${(props) => props['border-radius']};
+  background-color: ${(props) => props['background-color']};
 `;
 
-export interface RelativeBoxProps {
-  zIndex?: string;
-}
-
-export const RelativeBox = styled(Box)<RelativeBoxProps>`
-  position: relative;
-  z-index: ${(props) => props.zIndex};
-`;
-
-export interface AbsoluteBoxProps {
+export interface PositionBoxProps {
   top?: string;
   bottom?: string;
   left?: string;
   right?: string;
   zIndex?: number;
-  alignIitems?: string;
-  justifyContent?: string;
 }
 
-export const AbsoluteBox = styled(Box)<AbsoluteBoxProps>`
-  position: absolute;
+const PositionBox = styled(Box)<PositionBoxProps>`
   top: ${(props) => props.top};
   bottom: ${(props) => props.bottom};
   left: ${(props) => props.left};
@@ -43,13 +36,35 @@ export const AbsoluteBox = styled(Box)<AbsoluteBoxProps>`
   z-index: ${(props) => props.zIndex};
 `;
 
+export const RelativeBox = styled(PositionBox)<PositionBoxProps>`
+  position: relative;
+`;
+
+export const AbsoluteBox = styled(PositionBox)<PositionBoxProps>`
+  position: absolute;
+`;
+
+export interface FixedBoxProps {
+  display?: string;
+  'align-items': string;
+  'justify-content': string;
+}
+
+export const FixedBox = styled(PositionBox)<FixedBoxProps>`
+  position: fixed;
+
+  display: ${(props) => props.display};
+  align-items: ${(props) => props['align-items']};
+  justify-content: ${(props) => props['justify-content']};
+`;
+
 export interface FlexBoxProps {
-  alignIitems?: string;
+  alignItems?: string;
   justifyContent?: string;
 }
 
 export const FlexBox = styled(Box)<FlexBoxProps>`
   display: flex;
-  align-items: ${(props) => props.alignIitems};
+  align-items: ${(props) => props.alignItems};
   justify-content: ${(props) => props.justifyContent};
 `;
