@@ -38,7 +38,8 @@
                 "comma-dangle": [
                     "error",
                     "never"
-                ]
+                ],
+                "jsxBracketSameLine": false
             }
         ],
         "react/react-in-jsx-scope": "off"
