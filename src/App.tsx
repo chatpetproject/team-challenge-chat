@@ -21,13 +21,15 @@ function App() {
         width='262px'
         height='45px'
         variant='secondary'
-        onClick={openModal}>
+        onClick={openModal}
+      >
         Open Modal
       </Button>
       <Modal
         isOpen={isOpen}
         onClose={closeModal}
-        titleText='Sign up to start chatting'>
+        titleText='Sign up to start chatting'
+      >
         {''}
       </Modal>
     </>
