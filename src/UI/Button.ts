@@ -1,5 +1,10 @@
 import styled from 'styled-components';
-import { ButtonProps } from './Button.d';
+interface ButtonProps {
+  variant: 'primary' | 'secondary';
+  disabled?: boolean;
+  width: string;
+  height: string;
+}
 
 export const Button = styled.button<ButtonProps>`
   border: 0;
@@ -38,7 +43,7 @@ export const Button = styled.button<ButtonProps>`
       props.variant === 'secondary' &&
       `
         border: 0;
-        color: ${props.theme.colors.blackColor[1]};
+        color: ${props.theme.colors.blackColors[1]};
         background: ${props.theme.colors.whiteColor};
     `}
   }
