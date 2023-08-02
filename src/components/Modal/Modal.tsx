@@ -1,8 +1,8 @@
 import React from 'react';
 import Icon from '../Icon/Icon';
-import { AbsoluteBox, Box, FixedBox, RelativeBox } from '../../UI/Box';
-import { ModalTitle } from '../../UI/Text';
 import Theme from '../../styles/theme';
+import { ModalTitle } from '../../UI/Text';
+import { AbsoluteBox, Box, FixedBox, RelativeBox } from '../../UI/Box';
 
 interface ModalProps {
   isOpen: boolean;
@@ -20,7 +20,6 @@ const Modal: React.FC<ModalProps> = (props) => {
   return (
     <FixedBox
       top='0px'
-      left='0px'
       width='100%'
       height='100%'
       display='flex'
