@@ -1,7 +1,7 @@
 import Theme from './theme';
 import { createGlobalStyle } from 'styled-components';
 
-const { blackColor, whiteColor } = Theme.colors;
+const { blackColors, whiteColor } = Theme.colors;
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -13,7 +13,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     color: ${whiteColor};
     font-family: 'Inter', sans-serif;
-    background-color: ${blackColor[0]};
+    background-color: ${blackColors[0]};
   }
 
   h1 {

@@ -1,11 +1,11 @@
-import { MainTitle } from './UI/Text';
-import Header from './components/Header';
+import Layout from './Layout';
 
 function App() {
   return (
     <>
-      <Header />
-      <MainTitle>Buttons</MainTitle>
+      {/* <Header /> */}
+      <Layout />
+      {/* <Footer /> */}
     </>
   );
 }
