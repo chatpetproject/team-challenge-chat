@@ -52,7 +52,6 @@ export interface FixedBoxProps {
 
 export const FixedBox = styled(PositionBox)<FixedBoxProps>`
   position: fixed;
-
   display: ${(props) => props.display};
   align-items: ${(props) => props['align-items']};
   justify-content: ${(props) => props['justify-content']};
