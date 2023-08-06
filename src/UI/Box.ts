@@ -5,6 +5,7 @@ export interface BoxProps {
   height?: string;
   border?: string;
   padding?: string;
+  margin?: string;
   background?: string;
   'border-radius'?: string;
   'background-color'?: string;
@@ -15,6 +16,7 @@ export const Box = styled.div<BoxProps>`
   height: ${(props) => props.height};
   border: ${(props) => props.border};
   padding: ${(props) => props.padding};
+  margin: ${(props) => props.margin};
   background: ${(props) => props.background};
   border-radius: ${(props) => props['border-radius']};
   background-color: ${(props) => props['background-color']};

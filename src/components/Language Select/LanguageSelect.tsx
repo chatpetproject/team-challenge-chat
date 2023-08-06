@@ -1,4 +1,4 @@
-import { RelativeBox } from "../../UI/Box";
+import { Box, RelativeBox } from "../../UI/Box";
 
 interface LanguageSelectProps {
   label: string;
@@ -8,7 +8,7 @@ interface LanguageSelectProps {
 
 const LanguageSelect : React.FC<LanguageSelectProps> = (props) => {
   const {label, options, onChange}= props
-  return (<RelativeBox>Language Select</RelativeBox>)
-
+  return (<RelativeBox><Box></Box></RelativeBox>)
+  
 }
 export default LanguageSelect
