@@ -10,14 +10,13 @@ interface LanguageSelectProps {
 }
 
 const LanguageSelect: React.FC<LanguageSelectProps> = (props) => {
-  const { label, options, onChange } = props;
-  const defaultLanguage = 'English';
+  const { label, options = [], onChange } = props;
   const { whiteColor } = Theme.colors;
   const [isOpen, setIsOpen] = useState<boolean>(false);
-  
+
   const handleArrowIconClick = () => {
     setIsOpen(!isOpen);
-  }
+  };
 
   return (
     <RelativeBox>
@@ -29,7 +28,7 @@ const LanguageSelect: React.FC<LanguageSelectProps> = (props) => {
         font-size='24px'
         font-weight='500'
       >
-        {label ? label : defaultLanguage}
+        {label}
       </Box>
       <AbsoluteBox top='35%' right='20%'>
         {!isOpen ? (
@@ -64,11 +63,7 @@ const LanguageSelect: React.FC<LanguageSelectProps> = (props) => {
                 {option}
               </Box>
             ))
-          ) : (
-            <Box padding='5px' border-bottom={`1px solid ${whiteColor}`}>
-              {defaultLanguage}
-            </Box>
-          )}
+          ) : null}
         </AbsoluteBox>
       ) : null}
     </RelativeBox>
