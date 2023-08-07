@@ -32,28 +32,45 @@ const LanguageSelect: React.FC<LanguageSelectProps> = (props) => {
         {label ? label : defaultLanguage}
       </Box>
       <AbsoluteBox top='35%' right='20%'>
-        {!isOpen ? <Icon name='arrowDown' size={20} viewBox='0 0 20 20' /> : <Icon name='iconUp' />}
-      </AbsoluteBox>
-      <AbsoluteBox right='34%'>
-        {options ? (
-          options.map((option) => (
-            <Box
-              onChange={onChange}
-              key={option}
-              padding='5px'
-              border-bottom={`1px solid ${whiteColor}`}
-              font-size='24px'
-              font-weight='500'
-            >
-              {option}
-            </Box>
-          ))
+        {!isOpen ? (
+          <Icon
+            name='arrowDown'
+            size={20}
+            viewBox='0 0 20 20'
+            handleClick={handleArrowIconClick}
+          />
         ) : (
-          <Box padding='5px' border-bottom={`1px solid ${whiteColor}`}>
-            {defaultLanguage}
-          </Box>
+          <Icon
+            name='arrowUp'
+            width='17px'
+            height='10px'
+            viewBox='0 0 17 10'
+            handleClick={handleArrowIconClick}
+          />
         )}
       </AbsoluteBox>
+      {isOpen ? (
+        <AbsoluteBox right='34%'>
+          {options ? (
+            options.map((option) => (
+              <Box
+                onChange={onChange}
+                key={option}
+                padding='5px'
+                border-bottom={`1px solid ${whiteColor}`}
+                font-size='24px'
+                font-weight='500'
+              >
+                {option}
+              </Box>
+            ))
+          ) : (
+            <Box padding='5px' border-bottom={`1px solid ${whiteColor}`}>
+              {defaultLanguage}
+            </Box>
+          )}
+        </AbsoluteBox>
+      ) : null}
     </RelativeBox>
   );
 };

@@ -71,7 +71,7 @@ export interface FlexBoxProps {
   alignItems?: string;
   justifyContent?: string;
 }
-
+//take a look at the difference in defining interface properties notation 
 export const FlexBox = styled(Box)<FlexBoxProps>`
   display: flex;
   align-items: ${(props) => props.alignItems};

@@ -22,7 +22,6 @@ function Header() {
             viewBox='0 0 75 31'
           ></Icon>
           <FlexBox>
-            {/*<LanSelect>English</LanSelect>*/}
             <LanguageSelect
               label='English'
               options={['English']}
