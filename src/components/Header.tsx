@@ -1,11 +1,16 @@
 import { Button } from '../UI/Button';
-import { LanSelect } from '../UI/LanSelect';
+//import { LanSelect } from '../UI/LanSelect';
 import { HeaderContainer } from '../UI/HeaderContainer';
 import { FlexBox } from '../UI/Box';
 import Icon from './Icon/Icon';
 import { Wrapper } from '../UI/Wrapper';
+import LanguageSelect from './Language Select/LanguageSelect';
 
 function Header() {
+  const handleChange = () => {
+    console.log('change');
+  };
+
   return (
     <HeaderContainer>
       <Wrapper>
@@ -17,7 +22,12 @@ function Header() {
             viewBox='0 0 75 31'
           ></Icon>
           <FlexBox>
-            <LanSelect>English</LanSelect>
+            {/*<LanSelect>English</LanSelect>*/}
+            <LanguageSelect
+              label='English'
+              options={['English']}
+              onChange={handleChange}
+            />
             <Button variant='secondary' width='157px' height='45px'>
               Sign up
             </Button>

@@ -9,17 +9,25 @@ export interface BoxProps {
   background?: string;
   'border-radius'?: string;
   'background-color'?: string;
+  'border-bottom'?: string;
+  'font-size'?: string;
+  'font-weight'?: string;
+  color?: string;
 }
 
 export const Box = styled.div<BoxProps>`
   width: ${(props) => props.width};
   height: ${(props) => props.height};
   border: ${(props) => props.border};
+  border-bottom: ${(props) => props['border-bottom']};
   padding: ${(props) => props.padding};
   margin: ${(props) => props.margin};
   background: ${(props) => props.background};
   border-radius: ${(props) => props['border-radius']};
   background-color: ${(props) => props['background-color']};
+  font-size: ${(props) => props['font-size']};
+  font-weight: ${(props) => props['font-weight']};
+  color: ${(props) => props.color};
 `;
 
 export interface PositionBoxProps {
