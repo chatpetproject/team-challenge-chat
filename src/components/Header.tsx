@@ -13,7 +13,7 @@ function Header() {
   return (
     <HeaderContainer>
       <Wrapper>
-        <FlexBox justifyContent='space-between' alignItems='center'>
+        <FlexBox justify-content='space-between' align-items='center'>
           <Icon
             name='logo'
             width='78px'

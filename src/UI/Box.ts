@@ -68,12 +68,12 @@ export const FixedBox = styled(PositionBox)<FixedBoxProps>`
 `;
 
 export interface FlexBoxProps {
-  alignItems?: string;
-  justifyContent?: string;
+  'align-items'?: string;
+  'justify-content'?: string;
 }
-//take a look at the difference in defining interface properties notation
+
 export const FlexBox = styled(Box)<FlexBoxProps>`
   display: flex;
-  align-items: ${(props) => props.alignItems};
-  justify-content: ${(props) => props.justifyContent};
+  align-items: ${(props) => props['align-items']};
+  justify-content: ${(props) => props['justify-content']};
 `;
