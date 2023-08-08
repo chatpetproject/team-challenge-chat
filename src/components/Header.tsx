@@ -1,5 +1,4 @@
 import { Button } from '../UI/Button';
-//import { LanSelect } from '../UI/LanSelect';
 import { HeaderContainer } from '../UI/HeaderContainer';
 import { FlexBox } from '../UI/Box';
 import Icon from './Icon/Icon';
