@@ -10,7 +10,7 @@ interface LanguageSelectProps {
 }
 
 const LanguageSelect: React.FC<LanguageSelectProps> = (props) => {
-  const { label, options = [], onChange } = props;
+  const { label, options, onChange } = props;
   const { whiteColor } = Theme.colors;
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
