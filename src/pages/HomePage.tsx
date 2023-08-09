@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Box } from '../UI/Box';
-import { LIstItem, List } from '../UI/List';
+import { ListItem, List } from '../UI/List';
 import { Section } from '../UI/Section';
 import { MainTitle, SectionTitle } from '../UI/Text';
 import Card from '../components/Card/Card';
@@ -59,11 +59,11 @@ const HomePage = () => {
         <MainTitle>Choose a chat and enjoy communication</MainTitle>
         <List>
           {chatRoomsDummy.map((room) => (
-            <LIstItem key={room.id}>
+            <ListItem key={room.id}>
               <Link to={room.route}>
                 <Card hoverBg={main}>{room.name}</Card>
               </Link>
-            </LIstItem>
+            </ListItem>
           ))}
         </List>
       </Box>

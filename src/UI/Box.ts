@@ -68,7 +68,6 @@ export interface FlexBoxProps {
 
 export const FlexBox = styled(Box)<FlexBoxProps>`
   display: flex;
-  flex-wrap: wrap;
   align-items: ${(props) => props['align-items']};
   justify-content: ${(props) => props['justify-content']};
 `;

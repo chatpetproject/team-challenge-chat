@@ -7,4 +7,4 @@ export const List = styled.ul`
   list-style: none;
 `;
 
-export const LIstItem = styled.li``;
+export const ListItem = styled.li``;
