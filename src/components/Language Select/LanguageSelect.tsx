@@ -1,3 +1,4 @@
+import React from 'react';
 import { AbsoluteBox, Box, RelativeBox } from '../../UI/Box';
 import Icon from '../Icon/Icon';
 import Theme from '../../styles/theme';
