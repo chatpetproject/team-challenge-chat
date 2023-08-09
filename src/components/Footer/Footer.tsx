@@ -5,8 +5,8 @@ import { FooterStyle } from './style';
 
 const Footer = () => {
   return (
-    <FooterStyle>
-      <Box padding='38px 240px'>
+    <FooterStyle padding='38px 15px 0'>
+      <Box max-width='1440px' margin='0 auto'>
         <Button variant='secondary' width='238px' height='43px'>
           Cookies policy
         </Button>
