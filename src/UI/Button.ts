@@ -4,17 +4,18 @@ interface ButtonProps {
   disabled?: boolean;
   width: string;
   height: string;
+  margin?: string;
 }
 
 export const Button = styled.button<ButtonProps>`
   border: 0;
-  margin: 10px;
   outline: none;
   cursor: pointer;
   font-size: 24px;
   font-weight: 500;
   border-radius: 10px;
   transition: all 0.2s linear;
+  margin: ${(props) => props.margin};
   color: ${(props) => props.theme.colors.whiteColor};
 
   width: ${(props) => props.width};
