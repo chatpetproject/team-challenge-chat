@@ -1,11 +1,15 @@
 import Layout from './Layout';
+import Footer from './components/Footer/Footer';
+import { Main } from './UI/Main';
 
 function App() {
   return (
     <>
       {/* <Header /> */}
-      <Layout />
-      {/* <Footer /> */}
+      <Main>
+        <Layout />
+      </Main>
+      <Footer />
     </>
   );
 }
