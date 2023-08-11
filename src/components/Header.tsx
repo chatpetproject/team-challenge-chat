@@ -1,9 +1,8 @@
 import React from 'react';
 import { Button } from '../UI/Button';
 import { HeaderContainer } from '../UI/HeaderContainer';
-import { FlexBox } from '../UI/Box';
+import { Box, FlexBox } from '../UI/Box';
 import Icon from './Icon/Icon';
-import { Wrapper } from '../UI/Wrapper';
 import LanguageSelect from './Language Select/LanguageSelect';
 
 function Header() {
@@ -13,7 +12,7 @@ function Header() {
 
   return (
     <HeaderContainer>
-      <Wrapper>
+      <Box max-width='1440px' margin='0 auto'>
         <FlexBox justify-content='space-between' align-items='center'>
           <Icon
             name='logo'
@@ -35,7 +34,7 @@ function Header() {
             </Button>
           </FlexBox>
         </FlexBox>
-      </Wrapper>
+      </Box>
     </HeaderContainer>
   );
 }

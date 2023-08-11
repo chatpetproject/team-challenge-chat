@@ -21,6 +21,7 @@ export const Box = styled.div<BoxProps>`
   height: ${(props) => props.height};
   border: ${(props) => props.border};
   border-bottom: ${(props) => props['border-bottom']};
+  margin: ${(props) => props.margin};
   padding: ${(props) => props.padding};
   margin: ${(props) => props.margin};
   background: ${(props) => props.background};
