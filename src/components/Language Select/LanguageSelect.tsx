@@ -51,20 +51,18 @@ const LanguageSelect: React.FC<LanguageSelectProps> = (props) => {
       </AbsoluteBox>
       {isOpen ? (
         <AbsoluteBox right='34%'>
-          {options
-            ? options.map((option) => (
-                <Box
-                  onChange={onChange}
-                  key={option}
-                  padding='5px'
-                  border-bottom={`1px solid ${whiteColor}`}
-                  font-size='24px'
-                  font-weight='500'
-                >
-                  {option}
-                </Box>
-              ))
-            : null}
+          {options?.map((option) => (
+            <Box
+              onChange={onChange}
+              key={option}
+              padding='5px'
+              border-bottom={`1px solid ${whiteColor}`}
+              font-size='24px'
+              font-weight='500'
+            >
+              {option}
+            </Box>
+          ))}
         </AbsoluteBox>
       ) : null}
     </RelativeBox>

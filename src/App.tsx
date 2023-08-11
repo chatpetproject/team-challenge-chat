@@ -1,11 +1,12 @@
 import Layout from './Layout';
 import Footer from './components/Footer/Footer';
 import { Main } from './UI/Main';
+import Header from './components/Header';
 
 function App() {
   return (
     <>
-      {/* <Header /> */}
+      <Header />
       <Main>
         <Layout />
       </Main>

@@ -71,12 +71,24 @@ export const FixedBox = styled(PositionBox)<FixedBoxProps>`
 `;
 
 export interface FlexBoxProps {
-  'align-items': string;
-  'justify-content': string;
+  'align-items'?: string;
+  'justify-content'?: string;
 }
 
 export const FlexBox = styled(Box)<FlexBoxProps>`
   display: flex;
   align-items: ${(props) => props['align-items']};
   justify-content: ${(props) => props['justify-content']};
+`;
+
+export interface HoveredFlexBoxProps {
+  'hover-background-color'?: string;
+}
+
+export const HoveredFlexBox = styled(FlexBox)<HoveredFlexBoxProps>`
+  transition: all 0.2s linear;
+
+  &:hover {
+    background: ${(props) => props['hover-background-color']};
+  }
 `;

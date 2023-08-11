@@ -12,7 +12,7 @@ function Header() {
 
   return (
     <HeaderContainer>
-      <Box max-width='1440px' margin='0 auto'>
+      <Box max-width='1440px' margin='0 auto' padding='15px 0 0 0'>
         <FlexBox justify-content='space-between' align-items='center'>
           <Icon
             name='logo'
@@ -26,10 +26,20 @@ function Header() {
               options={['English']}
               onChange={handleChange}
             />
-            <Button variant='secondary' width='157px' height='45px'>
+            <Button
+              variant='secondary'
+              width='157px'
+              height='45px'
+              margin='8px 30px 0 0'
+            >
               Sign up
             </Button>
-            <Button variant='primary' width='262px' height='45px'>
+            <Button
+              variant='primary'
+              width='262px'
+              height='45px'
+              margin='8px 0 0 0'
+            >
               Enter to the chat
             </Button>
           </FlexBox>
