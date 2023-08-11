@@ -7,6 +7,7 @@ export interface BoxProps {
   padding?: string;
   margin?: string;
   background?: string;
+  'max-width'?: string;
   'border-radius'?: string;
   'background-color'?: string;
   'border-bottom'?: string;
@@ -23,6 +24,7 @@ export const Box = styled.div<BoxProps>`
   padding: ${(props) => props.padding};
   margin: ${(props) => props.margin};
   background: ${(props) => props.background};
+  max-width: ${(props) => props['max-width']};
   border-radius: ${(props) => props['border-radius']};
   background-color: ${(props) => props['background-color']};
   font-size: ${(props) => props['font-size']};
@@ -68,8 +70,8 @@ export const FixedBox = styled(PositionBox)<FixedBoxProps>`
 `;
 
 export interface FlexBoxProps {
-  'align-items'?: string;
-  'justify-content'?: string;
+  'align-items': string;
+  'justify-content': string;
 }
 
 export const FlexBox = styled(Box)<FlexBoxProps>`
