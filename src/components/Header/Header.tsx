@@ -1,9 +1,9 @@
 import React from 'react';
-import { Button } from '../UI/Button';
-import { HeaderContainer } from '../UI/HeaderContainer';
-import { Box, FlexBox } from '../UI/Box';
-import Icon from './Icon/Icon';
-import LanguageSelect from './Language Select/LanguageSelect';
+import { Button } from '../../UI/Button';
+import { HeaderContainer } from '../../UI/HeaderContainer';
+import { Box, FlexBox } from '../../UI/Box';
+import Icon from '../Icon/Icon';
+import LanguageSelect from '../Language Select/LanguageSelect';
 
 function Header() {
   const handleChange = () => {
