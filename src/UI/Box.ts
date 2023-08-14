@@ -3,25 +3,30 @@ import { styled } from 'styled-components';
 export interface BoxProps {
   width?: string;
   height?: string;
-  margin?: string;
   border?: string;
   padding?: string;
+  margin?: string;
   background?: string;
   'max-width'?: string;
   'border-radius'?: string;
   'background-color'?: string;
+  'border-bottom'?: string;
+  color?: string;
 }
 
 export const Box = styled.div<BoxProps>`
   width: ${(props) => props.width};
   height: ${(props) => props.height};
   border: ${(props) => props.border};
+  border-bottom: ${(props) => props['border-bottom']};
   margin: ${(props) => props.margin};
   padding: ${(props) => props.padding};
+  margin: ${(props) => props.margin};
   background: ${(props) => props.background};
   max-width: ${(props) => props['max-width']};
   border-radius: ${(props) => props['border-radius']};
   background-color: ${(props) => props['background-color']};
+  color: ${(props) => props.color};
 `;
 
 export interface PositionBoxProps {
@@ -62,8 +67,8 @@ export const FixedBox = styled(PositionBox)<FixedBoxProps>`
 `;
 
 export interface FlexBoxProps {
-  'align-items': string;
-  'justify-content': string;
+  'align-items'?: string;
+  'justify-content'?: string;
 }
 
 export const FlexBox = styled(Box)<FlexBoxProps>`

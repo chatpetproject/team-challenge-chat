@@ -18,3 +18,8 @@ export const MainTitle = styled.h4`
   color: ${(props) => props.theme.colors.whiteColor};
   margin-bottom: 60px;
 `;
+
+export const SelectText = styled.span`
+  font-size: 24px;
+  font-weight: 500;
+`;

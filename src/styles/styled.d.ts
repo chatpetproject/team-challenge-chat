@@ -14,6 +14,7 @@ declare module 'styled-components' {
     gradients: {
       main: string;
       secondary: string;
+      header: string;
     };
   }
 }
