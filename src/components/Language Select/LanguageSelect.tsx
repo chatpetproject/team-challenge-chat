@@ -3,6 +3,7 @@ import { AbsoluteBox, Box, RelativeBox } from '../../UI/Box';
 import Icon from '../Icon/Icon';
 import Theme from '../../styles/theme';
 import { useState } from 'react';
+import { SelectText } from '../../UI/Text';
 
 interface LanguageSelectProps {
   label?: string;
@@ -21,15 +22,8 @@ const LanguageSelect: React.FC<LanguageSelectProps> = (props) => {
 
   return (
     <RelativeBox>
-      <Box
-        margin='15px 48px'
-        width='110px'
-        height='30px'
-        color={whiteColor}
-        font-size='24px'
-        font-weight='500'
-      >
-        {label}
+      <Box margin='15px 48px' width='110px' height='30px' color={whiteColor}>
+        <SelectText>{label}</SelectText>
       </Box>
       <AbsoluteBox top='35%' right='20%'>
         {!isOpen ? (
@@ -57,10 +51,8 @@ const LanguageSelect: React.FC<LanguageSelectProps> = (props) => {
               key={option}
               padding='5px'
               border-bottom={`1px solid ${whiteColor}`}
-              font-size='24px'
-              font-weight='500'
             >
-              {option}
+              <SelectText>{option}</SelectText>
             </Box>
           ))}
         </AbsoluteBox>
