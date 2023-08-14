@@ -11,8 +11,6 @@ export interface BoxProps {
   'border-radius'?: string;
   'background-color'?: string;
   'border-bottom'?: string;
-  'font-size'?: string;
-  'font-weight'?: string;
   color?: string;
 }
 
@@ -28,8 +26,6 @@ export const Box = styled.div<BoxProps>`
   max-width: ${(props) => props['max-width']};
   border-radius: ${(props) => props['border-radius']};
   background-color: ${(props) => props['background-color']};
-  font-size: ${(props) => props['font-size']};
-  font-weight: ${(props) => props['font-weight']};
   color: ${(props) => props.color};
 `;
 
